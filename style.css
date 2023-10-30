@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#treyo{
+    color: red;
+    text-align: center;
+}
+
+.container{
+    width: 90%;
+    height: 85vh;
+    background-color: #f1f1f2;
+}
+
+#task-container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.task-groups{
+    width:21%;
+    height:650px;
+    background-color:darkslategray;
+    margin:5px;
+}
+
+ul{
+    min-height: 50px;
+    list-style-type: none;
+    padding: 5px;
+}
+
+ul li{
+    font-size: 1.5rem;
+    margin: 4px;
+    padding: 5px;
+    color: black;
+    border: 1px solid green;
+    background-color: white;
+    position: relative;
+}
+
+ul li .fa-trash{
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+#delete-item{
+    position: fixed;
+    bottom:20px;
+    width: 90%;
+    height: 20%;
+    background-color: red;
+}
+
+#delete-item h1{
+    position: absolute;
+    bottom: 75px;
+    left: 800px;
+}
+
+#delete-item ul{
+    min-width: 50%;
+    height: 100%;
+}
